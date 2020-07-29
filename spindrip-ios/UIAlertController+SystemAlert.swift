@@ -1,84 +1,32 @@
 //
-//  UIColor+Hex.swift
+//  UIAlertController+SystemAlert.swift
 //
-//  Created by Errol Cheong on 2018-11-27.
-//  Copyright © 2018 Errol Cheong. All rights reserved.
+//  Created by Errol Cheong on 2019-02-09.
 //
 import UIKit
-
-extension UIColor {
-    enum HexFormat {
-        case RGB
-        case RGBA
-        case RGBF
-        case RRGGBB
-        case RRGGBBAA
-        case RRGGBBFF
+extension UIAlertController {
+    enum ActionTitle: String {
+        case ok = "Ok"
+        case confirm = "Confirm"
+        case dismiss = "Dismiss"
+        case cancel = "Cancel"
+        case delete = "Delete"
+        case settings = "Settings"
     }
-    func toHexString(_ format: HexFormat = .RRGGBBAA) -> String? {
-        guard p_canProvideRGB() else { return nil }
-        let maxInt = [.RGB, .RGBF, .RGBA].contains(format) ? 16 : 256
-        func toInt(_ f: CGFloat) -> Int {
-            return min(maxInt - 1, Int(CGFloat(maxInt) * f))
-        }
-        var r: CGFloat = .nan
-        var g: CGFloat = .nan
-        var b: CGFloat = .nan
-        var a: CGFloat = .nan
-        self.getRed(&r, green: &g, blue: &b, alpha: &a)
-        let red = toInt(r)
-        let green = toInt(g)
-        let blue = toInt(b)
-        let alpha = toInt(a)
-        switch format {
-        case .RGB:
-            return String(format: "#%X%X%X", red, green, blue)
-        case .RGBA:
-            return String(format: "#%X%X%X%X", red, green, blue, alpha)
-        case .RGBF:
-            return String(format: "#%X%X%XF", red, green, blue)
-        case .RRGGBB:
-            return String(format: "#%02X%02X%02X", red, green, blue)
-        case .RRGGBBAA:
-            return String(format: "#%02X%02X%02X%02X", red, green, blue, alpha)
-        case .RRGGBBFF:
-            return String(format: "#%02X%02X%02XFF", red, green, blue)
-        }
+    class func confirmAlert(_ title: String?, message: String?, confirmTitle: ActionTitle, confirm: ((UIAlertAction) -> Void)? = nil, cancel: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+        // Create Alert
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        // Add Cancel Action
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: cancel))
+        // Add Ok Action
+        alert.addAction(UIAlertAction(title: confirmTitle.rawValue, style: .default, handler: confirm))
+        return alert
     }
-    convenience init?(hexString: String?) {
-        guard let hexString = hexString else { return nil }
-        var chars = Array(hexString.hasPrefix("#") ? hexString.dropFirst() : hexString[...])
-        let red, green, blue, alpha: CGFloat
-        switch chars.count {
-        case 3:
-            chars = chars + ["F"]
-            fallthrough
-        case 4:
-            chars = chars.flatMap { [$0, $0] }
-        case 6:
-            chars = chars + ["F","F"]
-        case 8:
-            break
-        default:
-            return nil
-        }
-        red   = CGFloat(strtoul(String(chars[0...1]), nil, 16)) / 255
-        green = CGFloat(strtoul(String(chars[2...3]), nil, 16)) / 255
-        blue  = CGFloat(strtoul(String(chars[4...5]), nil, 16)) / 255
-        alpha = CGFloat(strtoul(String(chars[6...7]), nil, 16)) / 255
-        self.init(red: red, green: green, blue:  blue, alpha: alpha)
-    }
-}
-fileprivate extension UIColor {
-    func p_canProvideRGB() -> Bool {
-        if let colorModel = self.cgColor.colorSpace?.model {
-            switch colorModel {
-            case .rgb, .monochrome:
-                return true
-            default:
-                return false
-            }
-        }
-        return false
+    class func systemAlert(_ title: String?, message: String?, actionTitle: ActionTitle = .ok, _ completionHandler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+        // Create Alert
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        // Add Ok Action
+        alert.addAction(UIAlertAction(title: actionTitle.rawValue, style: .default, handler: completionHandler))
+        return alert
     }
 }

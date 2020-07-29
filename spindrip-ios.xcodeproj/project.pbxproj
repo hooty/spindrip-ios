@@ -15,6 +15,10 @@
 		FC1B614924D10066004B2205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B614724D10066004B2205 /* LaunchScreen.storyboard */; };
 		FC1B615424D10066004B2205 /* spindrip_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B615324D10066004B2205 /* spindrip_iosTests.swift */; };
 		FC1B615F24D10066004B2205 /* spindrip_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B615E24D10066004B2205 /* spindrip_iosUITests.swift */; };
+		FC1B616E24D103CD004B2205 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1B616D24D103CD004B2205 /* WebKit.framework */; };
+		FC1B617024D11125004B2205 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B616F24D11125004B2205 /* UIColor+Hex.swift */; };
+		FC1B617224D113EF004B2205 /* UIAlertController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B617124D113EF004B2205 /* UIAlertController+SystemAlert.swift */; };
+		FC1B617824D128FC004B2205 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FC1B617724D128FC004B2205 /* AppIcon.appiconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC1B613924D10064004B2205 /* spindrip-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spindrip-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1B613924D10064004B2205 /* LAMLUXE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAMLUXE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B613C24D10064004B2205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC1B613E24D10064004B2205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC1B614024D10064004B2205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		FC1B615A24D10066004B2205 /* spindrip-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spindrip-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B615E24D10066004B2205 /* spindrip_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spindrip_iosUITests.swift; sourceTree = "<group>"; };
 		FC1B616024D10066004B2205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1B616D24D103CD004B2205 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FC1B616F24D11125004B2205 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		FC1B617124D113EF004B2205 /* UIAlertController+SystemAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+SystemAlert.swift"; sourceTree = "<group>"; };
+		FC1B617724D128FC004B2205 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1B616E24D103CD004B2205 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +92,14 @@
 				FC1B615224D10066004B2205 /* spindrip-iosTests */,
 				FC1B615D24D10066004B2205 /* spindrip-iosUITests */,
 				FC1B613A24D10064004B2205 /* Products */,
+				FC1B616C24D103CD004B2205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FC1B613A24D10064004B2205 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC1B613924D10064004B2205 /* spindrip-ios.app */,
+				FC1B613924D10064004B2205 /* LAMLUXE.app */,
 				FC1B614F24D10066004B2205 /* spindrip-iosTests.xctest */,
 				FC1B615A24D10066004B2205 /* spindrip-iosUITests.xctest */,
 			);
@@ -100,10 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				FC1B613C24D10064004B2205 /* AppDelegate.swift */,
+				FC1B616F24D11125004B2205 /* UIColor+Hex.swift */,
+				FC1B617124D113EF004B2205 /* UIAlertController+SystemAlert.swift */,
 				FC1B613E24D10064004B2205 /* SceneDelegate.swift */,
 				FC1B614024D10064004B2205 /* ViewController.swift */,
 				FC1B614224D10064004B2205 /* Main.storyboard */,
 				FC1B614524D10066004B2205 /* Assets.xcassets */,
+				FC1B617724D128FC004B2205 /* AppIcon.appiconset */,
 				FC1B614724D10066004B2205 /* LaunchScreen.storyboard */,
 				FC1B614A24D10066004B2205 /* Info.plist */,
 			);
@@ -128,6 +141,14 @@
 			path = "spindrip-iosUITests";
 			sourceTree = "<group>";
 		};
+		FC1B616C24D103CD004B2205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B616D24D103CD004B2205 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +166,7 @@
 			);
 			name = "spindrip-ios";
 			productName = "spindrip-ios";
-			productReference = FC1B613924D10064004B2205 /* spindrip-ios.app */;
+			productReference = FC1B613924D10064004B2205 /* LAMLUXE.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FC1B614E24D10066004B2205 /* spindrip-iosTests */ = {
@@ -232,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1B617824D128FC004B2205 /* AppIcon.appiconset in Resources */,
 				FC1B614924D10066004B2205 /* LaunchScreen.storyboard in Resources */,
 				FC1B614624D10066004B2205 /* Assets.xcassets in Resources */,
 				FC1B614424D10064004B2205 /* Main.storyboard in Resources */,
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1B617224D113EF004B2205 /* UIAlertController+SystemAlert.swift in Sources */,
 				FC1B614124D10064004B2205 /* ViewController.swift in Sources */,
+				FC1B617024D11125004B2205 /* UIColor+Hex.swift in Sources */,
 				FC1B613D24D10064004B2205 /* AppDelegate.swift in Sources */,
 				FC1B613F24D10064004B2205 /* SceneDelegate.swift in Sources */,
 			);
@@ -433,16 +457,17 @@
 		FC1B616424D10066004B2205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = lamluxe;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GK52WGB54;
 				INFOPLIST_FILE = "spindrip-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LAMLUXE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,16 +476,17 @@
 		FC1B616524D10066004B2205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = lamluxe;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GK52WGB54;
 				INFOPLIST_FILE = "spindrip-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LAMLUXE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
