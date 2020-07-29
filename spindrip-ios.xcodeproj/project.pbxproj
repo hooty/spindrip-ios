@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC1B613D24D10064004B2205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B613C24D10064004B2205 /* AppDelegate.swift */; };
+		FC1B613F24D10064004B2205 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B613E24D10064004B2205 /* SceneDelegate.swift */; };
+		FC1B614124D10064004B2205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B614024D10064004B2205 /* ViewController.swift */; };
+		FC1B614424D10064004B2205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B614224D10064004B2205 /* Main.storyboard */; };
+		FC1B614624D10066004B2205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1B614524D10066004B2205 /* Assets.xcassets */; };
+		FC1B614924D10066004B2205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1B614724D10066004B2205 /* LaunchScreen.storyboard */; };
+		FC1B615424D10066004B2205 /* spindrip_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B615324D10066004B2205 /* spindrip_iosTests.swift */; };
+		FC1B615F24D10066004B2205 /* spindrip_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B615E24D10066004B2205 /* spindrip_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC1B615024D10066004B2205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC1B613124D10064004B2205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC1B613824D10064004B2205;
+			remoteInfo = "spindrip-ios";
+		};
+		FC1B615B24D10066004B2205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC1B613124D10064004B2205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC1B613824D10064004B2205;
+			remoteInfo = "spindrip-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC1B613924D10064004B2205 /* spindrip-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spindrip-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1B613C24D10064004B2205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC1B613E24D10064004B2205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC1B614024D10064004B2205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC1B614324D10064004B2205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC1B614524D10066004B2205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC1B614824D10066004B2205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC1B614A24D10066004B2205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1B614F24D10066004B2205 /* spindrip-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spindrip-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1B615324D10066004B2205 /* spindrip_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spindrip_iosTests.swift; sourceTree = "<group>"; };
+		FC1B615524D10066004B2205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1B615A24D10066004B2205 /* spindrip-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spindrip-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1B615E24D10066004B2205 /* spindrip_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spindrip_iosUITests.swift; sourceTree = "<group>"; };
+		FC1B616024D10066004B2205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC1B613624D10064004B2205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B614C24D10066004B2205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B615724D10066004B2205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC1B613024D10064004B2205 = {
+			isa = PBXGroup;
+			children = (
+				FC1B613B24D10064004B2205 /* spindrip-ios */,
+				FC1B615224D10066004B2205 /* spindrip-iosTests */,
+				FC1B615D24D10066004B2205 /* spindrip-iosUITests */,
+				FC1B613A24D10064004B2205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC1B613A24D10064004B2205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B613924D10064004B2205 /* spindrip-ios.app */,
+				FC1B614F24D10066004B2205 /* spindrip-iosTests.xctest */,
+				FC1B615A24D10066004B2205 /* spindrip-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC1B613B24D10064004B2205 /* spindrip-ios */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B613C24D10064004B2205 /* AppDelegate.swift */,
+				FC1B613E24D10064004B2205 /* SceneDelegate.swift */,
+				FC1B614024D10064004B2205 /* ViewController.swift */,
+				FC1B614224D10064004B2205 /* Main.storyboard */,
+				FC1B614524D10066004B2205 /* Assets.xcassets */,
+				FC1B614724D10066004B2205 /* LaunchScreen.storyboard */,
+				FC1B614A24D10066004B2205 /* Info.plist */,
+			);
+			path = "spindrip-ios";
+			sourceTree = "<group>";
+		};
+		FC1B615224D10066004B2205 /* spindrip-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B615324D10066004B2205 /* spindrip_iosTests.swift */,
+				FC1B615524D10066004B2205 /* Info.plist */,
+			);
+			path = "spindrip-iosTests";
+			sourceTree = "<group>";
+		};
+		FC1B615D24D10066004B2205 /* spindrip-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC1B615E24D10066004B2205 /* spindrip_iosUITests.swift */,
+				FC1B616024D10066004B2205 /* Info.plist */,
+			);
+			path = "spindrip-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC1B613824D10064004B2205 /* spindrip-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1B616324D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-ios" */;
+			buildPhases = (
+				FC1B613524D10064004B2205 /* Sources */,
+				FC1B613624D10064004B2205 /* Frameworks */,
+				FC1B613724D10064004B2205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spindrip-ios";
+			productName = "spindrip-ios";
+			productReference = FC1B613924D10064004B2205 /* spindrip-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC1B614E24D10066004B2205 /* spindrip-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1B616624D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-iosTests" */;
+			buildPhases = (
+				FC1B614B24D10066004B2205 /* Sources */,
+				FC1B614C24D10066004B2205 /* Frameworks */,
+				FC1B614D24D10066004B2205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC1B615124D10066004B2205 /* PBXTargetDependency */,
+			);
+			name = "spindrip-iosTests";
+			productName = "spindrip-iosTests";
+			productReference = FC1B614F24D10066004B2205 /* spindrip-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC1B615924D10066004B2205 /* spindrip-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC1B616924D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-iosUITests" */;
+			buildPhases = (
+				FC1B615624D10066004B2205 /* Sources */,
+				FC1B615724D10066004B2205 /* Frameworks */,
+				FC1B615824D10066004B2205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC1B615C24D10066004B2205 /* PBXTargetDependency */,
+			);
+			name = "spindrip-iosUITests";
+			productName = "spindrip-iosUITests";
+			productReference = FC1B615A24D10066004B2205 /* spindrip-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC1B613124D10064004B2205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Spindrip;
+				TargetAttributes = {
+					FC1B613824D10064004B2205 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					FC1B614E24D10066004B2205 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FC1B613824D10064004B2205;
+					};
+					FC1B615924D10066004B2205 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = FC1B613824D10064004B2205;
+					};
+				};
+			};
+			buildConfigurationList = FC1B613424D10064004B2205 /* Build configuration list for PBXProject "spindrip-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC1B613024D10064004B2205;
+			productRefGroup = FC1B613A24D10064004B2205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC1B613824D10064004B2205 /* spindrip-ios */,
+				FC1B614E24D10066004B2205 /* spindrip-iosTests */,
+				FC1B615924D10066004B2205 /* spindrip-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC1B613724D10064004B2205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1B614924D10066004B2205 /* LaunchScreen.storyboard in Resources */,
+				FC1B614624D10066004B2205 /* Assets.xcassets in Resources */,
+				FC1B614424D10064004B2205 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B614D24D10066004B2205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B615824D10066004B2205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC1B613524D10064004B2205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1B614124D10064004B2205 /* ViewController.swift in Sources */,
+				FC1B613D24D10064004B2205 /* AppDelegate.swift in Sources */,
+				FC1B613F24D10064004B2205 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B614B24D10066004B2205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1B615424D10066004B2205 /* spindrip_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1B615624D10066004B2205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC1B615F24D10066004B2205 /* spindrip_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC1B615124D10066004B2205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC1B613824D10064004B2205 /* spindrip-ios */;
+			targetProxy = FC1B615024D10066004B2205 /* PBXContainerItemProxy */;
+		};
+		FC1B615C24D10066004B2205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC1B613824D10064004B2205 /* spindrip-ios */;
+			targetProxy = FC1B615B24D10066004B2205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC1B614224D10064004B2205 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1B614324D10064004B2205 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC1B614724D10066004B2205 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC1B614824D10066004B2205 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC1B616124D10066004B2205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC1B616224D10066004B2205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC1B616424D10066004B2205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC1B616524D10066004B2205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC1B616724D10066004B2205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spindrip-ios.app/spindrip-ios";
+			};
+			name = Debug;
+		};
+		FC1B616824D10066004B2205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spindrip-ios.app/spindrip-ios";
+			};
+			name = Release;
+		};
+		FC1B616A24D10066004B2205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "spindrip-ios";
+			};
+			name = Debug;
+		};
+		FC1B616B24D10066004B2205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GK52WGB54;
+				INFOPLIST_FILE = "spindrip-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "spindrip-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC1B613424D10064004B2205 /* Build configuration list for PBXProject "spindrip-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1B616124D10066004B2205 /* Debug */,
+				FC1B616224D10066004B2205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1B616324D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1B616424D10066004B2205 /* Debug */,
+				FC1B616524D10066004B2205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1B616624D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1B616724D10066004B2205 /* Debug */,
+				FC1B616824D10066004B2205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC1B616924D10066004B2205 /* Build configuration list for PBXNativeTarget "spindrip-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1B616A24D10066004B2205 /* Debug */,
+				FC1B616B24D10066004B2205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC1B613124D10064004B2205 /* Project object */;
+}
