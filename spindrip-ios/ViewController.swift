@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var webView: WKWebView!
     var refreshControl: UIRefreshControl!
     @IBOutlet var stackView: UIStackView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +46,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activityIndicator.startAnimating()
+    }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         refreshControl.endRefreshing()
+        activityIndicator.stopAnimating()
     }
 }
 
