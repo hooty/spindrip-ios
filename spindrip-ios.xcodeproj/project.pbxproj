@@ -459,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = lamluxe;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2GK52WGB54;
 				INFOPLIST_FILE = "spindrip-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -466,6 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
 				PRODUCT_NAME = LAMLUXE;
 				SWIFT_VERSION = 5.0;
@@ -478,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = lamluxe;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 2GK52WGB54;
 				INFOPLIST_FILE = "spindrip-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -485,6 +488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.spindrip-ios";
 				PRODUCT_NAME = LAMLUXE;
 				SWIFT_VERSION = 5.0;

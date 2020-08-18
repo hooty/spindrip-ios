@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(webView)
 
 //        let url = URL(string: "http://192.168.86.30:5000")!
-        let url = URL(string: "https://www.spindrip.com/")!
+        let url = URL(string: "https://www.spindrip.com/users/10-scott-lamoreaux/clients/0-public/launch_screen")!
         let request = URLRequest(url: url)
         webView.load(request)
         webView.allowsBackForwardNavigationGestures = true
