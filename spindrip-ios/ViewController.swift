@@ -27,8 +27,8 @@ class ViewController: UIViewController {
         webView.uiDelegate = self
         stackView.addArrangedSubview(webView)
 
-//        let url = URL(string: "http://192.168.86.30:5000")!
-        let url = URL(string: "https://www.spindrip.com/users/10-scott-lamoreaux/clients/0-public/launch_screen")!
+//        let url = URL(string: "http://192.168.86.30:5000/users/47-scott-lamoreaux/clients/0-public/launch_screens")!
+        let url = URL(string: "https://www.spindrip.com/users/10-scott-lamoreaux/clients/0-public/launch_screens")!
         let request = URLRequest(url: url)
         webView.load(request)
         webView.allowsBackForwardNavigationGestures = true
@@ -60,6 +60,8 @@ extension ViewController: WKScriptMessageHandler {
         print(message)
         if let hexString = message.body as? String {
             view.backgroundColor = UIColor(hexString: hexString)
+            refreshControl.backgroundColor = UIColor(hexString: hexString)
+            refreshControl.tintColor = UIColor.white
         }
     }
 }
@@ -79,4 +81,15 @@ extension ViewController: WKUIDelegate {
         }
         present(alert, animated: true, completion: nil)
     }
+   
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.request.url?.scheme == "tel" {
+            UIApplication.shared.open(navigationAction.request.url!, options: [:], completionHandler: nil)
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
+        }
+    }
+    
+    
 }
